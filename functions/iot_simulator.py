@@ -26,7 +26,7 @@ def generate_telemetry():
     return telemetry
 
 try:
-    for _ in range(20):  # send 20 messages only
+    while True:  # keep sending messages
         data = generate_telemetry()
         msg = Message(json.dumps(data))
         print(f"Sending: {data}")

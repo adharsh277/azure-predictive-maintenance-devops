@@ -1,0 +1,39 @@
+name: Terraform CI/CD
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  terraform:
+    runs-on: ubuntu-latest
+
+    steps:
+      # 1. Checkout code
+      - name: Checkout Repository
+        uses: actions/checkout@v3
+
+      # 2. Setup Azure login
+      - name: Azure Login
+        uses: azure/login@v1
+        with:
+          creds: ${{ secrets.AZURE_CREDENTIALS }}
+
+      # 3. Setup Terraform
+      - name: Setup Terraform
+        uses: hashicorp/setup-terraform@v2
+        with:
+          terraform_version: 1.6.3
+
+      # 4. Terraform Init
+      - name: Terraform Init
+        run: terraform init
+
+      # 5. Terraform Plan
+      - name: Terraform Plan
+        run: terraform plan
+
+      # 6. Terraform Apply
+      - name: Terraform Apply
+        run: terraform apply -auto-approve
