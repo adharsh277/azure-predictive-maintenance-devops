@@ -1,39 +1,41 @@
-name: Terraform CI/CD
+name: Terraform Deployment
 
 on:
   push:
     branches:
       - main
+  workflow_dispatch:
 
 jobs:
   terraform:
     runs-on: ubuntu-latest
 
     steps:
-      # 1. Checkout code
-      - name: Checkout Repository
-        uses: actions/checkout@v3
+      - name: Checkout code
+        uses: actions/checkout@v4
 
-      # 2. Setup Azure login
       - name: Azure Login
         uses: azure/login@v1
         with:
           creds: ${{ secrets.AZURE_CREDENTIALS }}
 
-      # 3. Setup Terraform
       - name: Setup Terraform
-        uses: hashicorp/setup-terraform@v2
+        uses: hashicorp/setup-terraform@v3
         with:
-          terraform_version: 1.6.3
+          terraform_version: 1.8.0
 
-      # 4. Terraform Init
+      - name: Verify files exist
+        run: ls -R
+        working-directory: infra
+
       - name: Terraform Init
         run: terraform init
+        working-directory: infra
 
-      # 5. Terraform Plan
       - name: Terraform Plan
-        run: terraform plan
+        run: terraform plan -out=tfplan
+        working-directory: infra
 
-      # 6. Terraform Apply
       - name: Terraform Apply
-        run: terraform apply -auto-approve
+        run: terraform apply -auto-approve tfplan
+        working-directory: infra
