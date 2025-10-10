@@ -30,5 +30,8 @@ jobs:
         uses: hashicorp/setup-terraform@v3
         with:
           terraform_version: 1.8.0
+<<<<<<< HEAD
 
 
+=======
+>>>>>>> f281385 (added the terraform)
