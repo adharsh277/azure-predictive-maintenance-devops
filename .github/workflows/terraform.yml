@@ -31,14 +31,4 @@ jobs:
         with:
           terraform_version: 1.8.0
 
-      - name: Terraform Init
-        working-directory: ./infra
-        run: terraform init
 
-      - name: Terraform Plan
-        working-directory: ./infra
-        run: terraform plan -out=tfplan
-
-      - name: Terraform Apply
-        working-directory: ./infra
-        run: terraform apply -auto-approve tfplan
