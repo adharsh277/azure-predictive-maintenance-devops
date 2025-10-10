@@ -38,3 +38,4 @@ terraform.rc
 # .gitignore
 functions/.env
 
+functions/.env
