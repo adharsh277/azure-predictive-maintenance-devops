@@ -1,10 +1,14 @@
 import time
 import json
 import random
+import os
 from azure.iot.device import IoTHubDeviceClient, Message
+from dotenv import load_dotenv
 
-# Replace with your IoT Hub connection string
-CONNECTION_STRING = "HostName=pmpiothub715.azure-devices.net;DeviceId=Device001;SharedAccessKey=z//+82Vx4bbjVh0eHqIrYIjsJOrPRo3Gql9l2Wt/8Zw="
+# Load environment variables from .env
+load_dotenv()
+
+CONNECTION_STRING = os.getenv("IOT_HUB_CONNECTION_STRING")
 
 # Create IoT Hub client
 client = IoTHubDeviceClient.create_from_connection_string(CONNECTION_STRING)
@@ -20,7 +24,7 @@ def generate_telemetry():
     return telemetry
 
 try:
-    while True:
+    for _ in range(20):  # send 20 messages only (safe)
         data = generate_telemetry()
         msg = Message(json.dumps(data))
         print(f"Sending: {data}")
