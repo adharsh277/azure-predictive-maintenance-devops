@@ -11,8 +11,15 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      - name: Checkout code
+      - name: Checkout repository
         uses: actions/checkout@v4
+
+      - name: List project structure
+        run: |
+          echo "=== PROJECT ROOT ==="
+          ls -R
+          echo "=== INFRA DIRECTORY ==="
+          ls -R infra || echo "Infra directory not found"
 
       - name: Azure Login
         uses: azure/login@v1
@@ -24,18 +31,14 @@ jobs:
         with:
           terraform_version: 1.8.0
 
-      - name: Verify files exist
-        run: ls -R
-        working-directory: infra
-
       - name: Terraform Init
+        working-directory: ./infra
         run: terraform init
-        working-directory: infra
 
       - name: Terraform Plan
+        working-directory: ./infra
         run: terraform plan -out=tfplan
-        working-directory: infra
 
       - name: Terraform Apply
+        working-directory: ./infra
         run: terraform apply -auto-approve tfplan
-        working-directory: infra
