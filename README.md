@@ -159,8 +159,8 @@ Resource utilization and alerts
 Optional ML prediction visualizations
 
 ### 🎥 Demo
-## Demo
-![Project Demo](assets/demo.gif)
+
+![Project Demo](https://github.com/AdharshU/predictive-maintenance-azure/raw/main/assets/demo.gif)
 
 
 IoT simulator sending telemetry data
