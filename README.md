@@ -71,6 +71,13 @@ It demonstrates **Cloud, IoT, Machine Learning, and DevOps integration** — pro
    - Network Security Groups (NSGs) ensure secure communication
 
 ---
+## 📸 Project Screenshots  
+
+| ![s1](assets/s1.png) | ![s2](assets/s2.png) |
+| --- | --- |
+| ![s3](assets/s3.png) | ![s4](assets/s4.png) |
+
+> These screenshots showcase the step-by-step implementation of the Predictive Maintenance Platform — from IoT data ingestion to visualization dashboards.
 
 ## 🧰 Tools & Technologies
 
@@ -148,16 +155,6 @@ Energy: Monitor turbines or solar panels for anomalies
 Logistics: Predict vehicle breakdowns to minimize delays
 
 Healthcare: Monitor critical medical equipment in hospitals
-
-### 📊 Dashboards
-## 📸 Project Screenshots  
-
-| ![s1](assets/s1.png) | ![s2](assets/s2.png) |
-| --- | --- |
-| ![s3](assets/s3.png) | ![s4](assets/s4.png) |
-
-> These screenshots showcase the step-by-step implementation of the Predictive Maintenance Platform — from IoT data ingestion to visualization dashboards.
-
 
 ### 🎥 Demo
 
