@@ -23,6 +23,8 @@ It demonstrates **Cloud, IoT, Machine Learning, and DevOps integration** — pro
 > Imagine a factory with hundreds of machines. Each machine is equipped with sensors monitoring temperature, vibration, and operating hours. This platform can **predict machine failure** before it happens, allowing maintenance teams to act proactively, reducing downtime and saving costs.
 
 ---
+### 🗂 Arc Diagram
+![Arc Diagram](assets/arc_diagram1.png)
 
 ## 📈 How It Works
 
