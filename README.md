@@ -160,7 +160,9 @@ Resource utilization and alerts
 Optional ML prediction visualizations
 
 ### 🎥 Demo
-Record a 3–5 minute demo showing:
+## Demo
+![Project Demo](assets/demo.gif)
+
 
 IoT simulator sending telemetry data
 
