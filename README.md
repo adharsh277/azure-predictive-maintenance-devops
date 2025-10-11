@@ -1,2 +1,14 @@
-# azure-predictive-maintenance-devops
-Enterprise-grade predictive maintenance platform on Azure with Terraform automation, GitHub Actions CI/CD, and real-time monitoring
+# Predictive Maintenance IoT Platform (Azure)
+
+![Azure](https://img.shields.io/badge/Azure-Cloud-blue?logo=microsoftazure)
+![IoT Hub](https://img.shields.io/badge/Azure%20IoT%20Hub-IoT%20Telemetry-blue?logo=microsoftazure)
+![Event Hub](https://img.shields.io/badge/Azure%20Event%20Hub-Streaming-lightblue?logo=microsoftazure)
+![Blob Storage](https://img.shields.io/badge/Azure%20Blob%20Storage-Data%20Lake-lightblue?logo=microsoftazure)
+![Azure ML](https://img.shields.io/badge/Azure%20ML-Predictive%20Modeling-orange?logo=azureml)
+![AKS](https://img.shields.io/badge/Azure%20Kubernetes-Cluster-blue?logo=kubernetes)
+![Grafana](https://img.shields.io/badge/Grafana-Monitoring-red?logo=grafana)
+![Prometheus](https://img.shields.io/badge/Prometheus-Metrics-red?logo=prometheus)
+![Docker](https://img.shields.io/badge/Docker-Containerization-blue?logo=docker)
+![Terraform](https://img.shields.io/badge/Terraform-IaC-purple?logo=terraform)
+![GitHub Actions](https://img.shields.io/badge/GitHub%20Actions-CI/CD-green?logo=githubactions)
+![Python](https://img.shields.io/badge/Python-Development-lightgrey?logo=python)
