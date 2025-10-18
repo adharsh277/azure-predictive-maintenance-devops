@@ -13,7 +13,6 @@
 ![GitHub Actions](https://img.shields.io/badge/GitHub%20Actions-CI/CD-green?logo=githubactions)
 ![Python](https://img.shields.io/badge/Python-Development-lightgrey?logo=python)
 
-
 ## 🚀 Project Overview
 The **Predictive Maintenance IoT Platform** is an end-to-end **Azure-native solution** designed to simulate IoT device telemetry, process real-time streaming data, detect anomalies, trigger alerts, and visualize device health.  
 
