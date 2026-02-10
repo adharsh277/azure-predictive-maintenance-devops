@@ -1,3 +1,4 @@
+
 # Predictive Maintenance IoT Platform (Azure)
 ![Azure](https://img.shields.io/badge/Azure-Cloud-blue?logo=microsoftazure)
 ![IoT Hub](https://img.shields.io/badge/Azure%20IoT%20Hub-IoT%20Telemetry-blue?logo=microsoftazure)
